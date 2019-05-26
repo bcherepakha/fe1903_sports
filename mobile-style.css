@@ -1,0 +1,136 @@
+/* @import url(desktop-style.css); */
+@media (max-width: 721px)
+{
+  .section__first {
+    background: #F4F6F9;
+  }
+  .app {
+    padding: 0 20px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+  }
+  .app h1 {
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .app p {
+    padding: 0;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .stores {
+    padding-bottom: 59px;
+    justify-content: center;
+  }
+  .experience {
+    align-items: center;
+    flex-direction: column;
+  }
+  .experience__wr {
+    position: relative;
+  }
+  .experience__content {
+    text-align: center;
+    padding: 54px 0;
+  }
+  .experience__photo {
+    margin: 0;
+  }
+  .logos {
+    flex-wrap: wrap;
+  }
+  .interface__content {
+    text-align: center;
+    padding: 62px;
+  }
+  .features__wrapper {
+    background: #FAFAFA;
+  }
+  .features__content {
+    text-align: center;
+  }
+  .features__content h2 {
+    color: #333333;
+  }
+  .features__list li {
+    color: #4F4F4F;
+  }
+  .icon {
+    fill: #00ADEE;
+  }
+  .team {
+    flex-direction: column;
+  }
+
+  .users-says::before,
+  .users-says::after
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 160px;
+    z-index: 10;
+    height: 100%;
+    background: linear-gradient(90deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%)
+  }
+
+  .users-says::before
+  {
+    left: 0;
+    background: linear-gradient(90deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%)
+  }
+
+  .users-says::after
+  {
+    right: 0;
+    background: linear-gradient(270deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%)
+  }
+
+  .swiper-container
+  {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 721px) {
+  .experience__wr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56%;
+    height: 100%;
+    z-index: -2;
+    background: url(imeges/Rectangle.jpg)
+    left top no-repeat;
+    background-size: cover;
+    pointer-events: none;
+  }
+  .experience__wr::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(270deg, #FFFFFF 5.16%,
+    rgba(255, 255, 255, 0) 67.14%),
+    rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    pointer-events: none;
+  }
+  .features__wrapper {
+    background: url(imeges/bgblue.png);
+    background-size: cover;
+    pointer-events: none;
+  }
+}
